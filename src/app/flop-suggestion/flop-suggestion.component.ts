@@ -26,6 +26,7 @@ export class FlopSuggestionComponent {
     curSug.year = this.model.year;
     curSug.stars = this.model.stars;
     this.model = curSug;
+    this.model = { ...new Suggestion() };
   }
 
   cancel() {
